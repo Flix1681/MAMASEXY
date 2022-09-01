@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>My LIFF App</title>
+</head>
+<body>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+    <script>
+        async function main() {
+                                         // Liff ID
+            await liff.init({ liffId: "1657250928-w7VK25yg" })
+            await liff.shareTargetPicker([
+                {
+                    type: "flex",
+                    // ข้อความก่อนกดอ่าน
+                    altText: "ว่างอยู่ไหม",
+                    contents: 
+                    // โค้ดจาก line bot designer
+                    {
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "horizontal",
+    "contents": [
+      {
+        "type": "text",
+        "text": "เคsดิตwรี 50 ทำยoด 𝟲𝟱𝟬 ถoนได้ 𝟮𝟱𝟬",
+        "weight": "bold",
+        "size": "sm",
+        "color": "#AAAAAA",
+        "contents": []
+      }
+    ]
+  },
+  "hero": {
+    "type": "image",
+    "url": "https://media.discordapp.net/attachments/1014664634386628688/1014664774056943616/02-03-01.jpg?w=auto",
+    "size": "full",
+    "aspectRatio": "20:20",
+    "aspectMode": "cover",
+    "action": {
+      "type": "uri",
+      "label": "Action",
+      "uri": "https://linecorp.com/"
+    }
+  },
+  "body": {
+    "type": "box",
+    "layout": "horizontal",
+    "spacing": "md",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "flex": 1,
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://media.discordapp.net/attachments/1014664634386628688/1014664814552952873/03-03-01.jpg?w=auto",
+            "gravity": "bottom",
+            "size": "sm",
+            "aspectRatio": "4:3",
+            "aspectMode": "cover"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "flex": 2,
+        "contents": [
+          {
+            "type": "text",
+            "text": "โปsสมาชิחใหม่ รับเพิ่ม 50%",
+            "size": "xs",
+            "flex": 1,
+            "gravity": "top",
+            "contents": []
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "ฝדก 1,000 รัυ 1,500",
+            "size": "xs",
+            "flex": 2,
+            "gravity": "center",
+            "contents": []
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "รับเพิ่ม 30% รับได้ทุกวัน",
+            "size": "xs",
+            "flex": 2,
+            "gravity": "center",
+            "contents": []
+          },
+          {
+            "type": "separator"
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "horizontal",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "รับเคsดิตwรี",
+          "uri": "https://liff.line.me/1645278921-kWRPP32q/?accountId=128dvosb"
+        },
+        "style": "primary"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "แชร์ให้เพื่อน",
+          "uri": "https://liff.line.me/1657250928-w7VK25yg"
+        }
+      }
+    ]
+  }
+}
+                }
+            ])
+            liff.closeWindow()
+        }
+        main()
+    </script>
+</body>
+</html>
